@@ -32,12 +32,15 @@ public class OrdenarFilas {
         // Usamos el ordenamiento burbuja
         int aux;
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length - 1; j++) {
-                if(matriz[i][j] > matriz[i][j + 1]){
-                    aux = matriz[i][j];
-                    matriz[i][j] = matriz[i][j + 1];
-                    matriz[i][j + 1] =  aux;
+            for (int j = 0; j < matriz[i].length; j++) {
+                for(int k = 0; k < matriz[i].length - 1; k++){
+                    if (matriz[i][k] > matriz[i][k + 1]) {
+                        aux = matriz[i][k];
+                        matriz[i][k] = matriz[i][k + 1];
+                        matriz[i][k + 1] = aux;
+                    }
                 }
+
             }
 
         }

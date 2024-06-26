@@ -22,7 +22,7 @@ public class MatrizParImpar {
         int[][] matriz = new int[tamMatriz][tamMatriz];
 
         // Llenamos la matriz segun el valor que le corresponde
-        for (int i = 0; i < matriz.length; i++) {
+        for (int i = 1; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (i % 2 == 0) {
                     matriz[i][j] = 10;
